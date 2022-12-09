@@ -1,4 +1,4 @@
-package io.turntabl.tarintrading.model.repository;
+package io.turntabl.tarintrading.repository;
 
 import io.turntabl.tarintrading.model.ERole;
 import io.turntabl.tarintrading.model.Role;
