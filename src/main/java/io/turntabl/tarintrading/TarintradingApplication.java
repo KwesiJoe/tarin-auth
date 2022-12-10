@@ -7,20 +7,13 @@ import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
+import org.springframework.jdbc.datasource.DriverManagerDataSource;
+
 
 @SpringBootApplication
 public class TarintradingApplication {
-
 	public static void main(String[] args) {
 		SpringApplication.run(TarintradingApplication.class, args);
 	}
 
-	@Bean
-	CommandLineRunner commandLineRunner(RoleRepository repository) {
-		return args -> {
-			repository.save(new Role(ERole.ROLE_USER));
-			repository.save(new Role(ERole.ROLE_ADMIN));
-			repository.save(new Role(ERole.ROLE_REGULATOR));
-		};
-	}
 }
