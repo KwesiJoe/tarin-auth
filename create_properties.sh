@@ -14,4 +14,4 @@ server.error.include-message=always
 # App Properties
 tarintrading.app.jwtSecret=${jwt_secret}
 tarintrading.app.jwtExpirationMs=86400000
-"
+" > ./src/main/resources/application.properties
